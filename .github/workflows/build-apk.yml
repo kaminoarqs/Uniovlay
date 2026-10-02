@@ -19,7 +19,7 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
-          gradle-version: '8.2' # Forces the server to use a compatible version instead of the new broken one
+          gradle-version: '8.2'
 
       - name: Build Debug APK
         run: gradle assembleDebug
@@ -29,5 +29,4 @@ jobs:
         with:
           name: Uniovlay-Debug-APK
           path: app/build/outputs/apk/debug/*.apk
-          
           
